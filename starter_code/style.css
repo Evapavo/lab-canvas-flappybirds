@@ -1,7 +1,9 @@
 body {
   text-align: center;
 }
-
+canvas {
+  border: 1px solid black;
+}
 body h1 {
   font-size: 30px;
   text-transform: uppercase;
