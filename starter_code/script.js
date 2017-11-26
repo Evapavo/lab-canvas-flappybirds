@@ -2,7 +2,7 @@ function Game(canvas) {
   this.canvas = document.getElementById("canvas");
   this.ctx = this.canvas.getContext('2d');
   this.xPos = 0;
-
+  this.faby = new Faby(this.canvas, "images/flappy.png");
   this.bg = new Image();
   this.bg.src = "images/bg.png";
   // this.bg.onload = function (){
@@ -10,7 +10,7 @@ function Game(canvas) {
   //
   // };
 
-  this.faby = new Faby(this.canvas, "images/flappy.png");
+
 
 
 }
