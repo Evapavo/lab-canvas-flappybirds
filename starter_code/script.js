@@ -1,5 +1,5 @@
 function Game(canvas) {
-  this.canvas = document.getElementById(canvas);
+  this.canvas = document.getElementById("canvas");
   this.ctx = this.canvas.getContext('2d');
   this.xPos = 0;
 
@@ -11,7 +11,6 @@ function Game(canvas) {
   // };
 
   this.faby = new Faby(this.canvas, "images/flappy.png");
-
 
 
 }
@@ -33,8 +32,6 @@ Game.prototype.draw = function() {
   }
   window.requestAnimationFrame(this.draw.bind(this));
 };
-
-
 
 
 
