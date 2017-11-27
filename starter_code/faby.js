@@ -9,7 +9,6 @@ function Faby (canvas, sprite){
   this.y = 100;
   this.scale = 0.2;
 
-
   this.sprite = new Image ();
   this.sprite.src = sprite;
   this.sprite.onload = (function() {
@@ -17,7 +16,6 @@ function Faby (canvas, sprite){
     this.width = this.sprite.width * this.scale;
     this.height = this.sprite.height * this.scale;
   }).bind(this);
-
 
 }
 
@@ -54,7 +52,7 @@ ctx.clearRect(0,0, canvas.width, canvas.height);
 //adding listener for spacebar//
 document.addEventListener("keypress", function(event) {
   if (event.keyCode == 32) {
-    ball.push();
+    Faby.push();
   }
 
     });

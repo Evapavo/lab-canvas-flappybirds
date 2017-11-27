@@ -9,10 +9,6 @@ function Game(canvas) {
   //   this.ctx.drawImage(this.bg,0,0);
   //
   // };
-
-
-
-
 }
 
 Game.prototype.drawBg = function() {
@@ -32,9 +28,6 @@ Game.prototype.draw = function() {
   }
   window.requestAnimationFrame(this.draw.bind(this));
 };
-
-
-
 
 
 window.onload = function() {
