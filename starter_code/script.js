@@ -29,13 +29,13 @@ Game.prototype.draw = function() {
   window.requestAnimationFrame(this.draw.bind(this));
 };
 
-
 window.onload = function() {
   var game = new Game("canvas");
   console.log(game);
   game.draw();
 
 
+//function startGame//
   document.getElementById("start-button").onclick = function() {
     startGame();
   };
